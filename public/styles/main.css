@@ -1,0 +1,37 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* container das logos */
+.logo-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+/* imagens */
+.logo-container img{
+    width: clamp(180px, 30vw, 400px);
+    height: auto;
+}
+
+.logo-container img{
+    transition: transform 0.4s ease;
+}
+
+.logo-container img:hover{
+    transform: scale(1.05);
+}
+@media(max-width:768px){
+    .logo-container{
+        flex-direction:column;
+    }
+
+    .logo-container img{
+        width:150px;
+    }
+}
