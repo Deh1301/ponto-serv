@@ -69,37 +69,24 @@ h2{
   font-size:28px;
 }
 
-/* GRID */
+/* GRID (PADRÃO DESKTOP) */
 .grid{
   display:grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap:20px;
 }
 
 /* TABLET */
 @media(max-width:1024px){
   .grid{
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* MOBILE */
+/* MOBILE (AQUI É O IMPORTANTE) */
 @media(max-width:768px){
   .grid{
-    grid-template-columns: 1fr !important;
-    gap:30px;
-  }
-
-  .card{
-    width:100%;
-  }
-
-  .card h3{
-    font-size:20px;
-  }
-
-  .desc{
-    font-size:15px;
+    grid-template-columns: 1fr; /* UM EMBAIXO DO OUTRO */
   }
 }
 
@@ -134,7 +121,7 @@ h2{
   padding:15px 15px 5px;
 }
 
-/* DESCRIÇÃO (TOGGLE) */
+/* DESCRIÇÃO */
 .desc{
   max-height:0;
   overflow:hidden;
@@ -147,7 +134,7 @@ h2{
   padding:0 15px 15px;
 }
 
-/* BOTÃO WHATS NOS CARDS */
+/* BOTÃO WHATS */
 .btn-whats{
   margin: 10px 15px 15px;
   padding: 12px;
@@ -222,7 +209,6 @@ h2{
   opacity:0.8;
 }
 
-/* LINKS */
 .footer-links{
   display:flex;
   flex-direction:column;
@@ -242,7 +228,6 @@ h2{
 .footer-links svg{
   width:20px;
   height:20px;
-  flex-shrink:0;
 }
 
 .footer-links a:hover{
@@ -250,9 +235,8 @@ h2{
   transform:translateX(5px);
 }
 
-/* cor instagram no hover */
 .footer-links a:hover svg{
-  color: #E1306C;
+  color:#E1306C;
 }
 
 /* FOOTER MOBILE */
