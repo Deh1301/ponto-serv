@@ -16,7 +16,6 @@ body{
   margin:auto;
 }
 
-/* HEADER */
 header{
   background:#fff;
   padding:20px 0;
@@ -39,7 +38,6 @@ header{
   height:40px;
 }
 
-/* HERO */
 .hero{
   background:#115A92;
   color:#fff;
@@ -58,7 +56,7 @@ header{
   margin:auto;
 }
 
-/* SECTIONS */
+
 section{
   padding:60px 0;
 }
@@ -69,28 +67,28 @@ h2{
   font-size:28px;
 }
 
-/* GRID (PADRÃO DESKTOP) */
+
 .grid{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   gap:20px;
 }
 
-/* TABLET */
+
 @media(max-width:1024px){
   .grid{
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* MOBILE (AQUI É O IMPORTANTE) */
+
 @media(max-width:768px){
   .grid{
-    grid-template-columns: 1fr; /* UM EMBAIXO DO OUTRO */
+    grid-template-columns: 1fr; 
   }
 }
 
-/* CARDS */
+
 .card{
   background:#fff;
   border-radius:12px;
@@ -104,7 +102,7 @@ h2{
   transform:translateY(-5px);
 }
 
-/* IMAGEM */
+
 .card img{
   width:100%;
   height:180px;
@@ -116,12 +114,12 @@ h2{
   transform:scale(1.05);
 }
 
-/* TEXTO */
+
 .card h3{
   padding:15px 15px 5px;
 }
 
-/* DESCRIÇÃO */
+
 .desc{
   max-height:0;
   overflow:hidden;
@@ -134,7 +132,7 @@ h2{
   padding:0 15px 15px;
 }
 
-/* BOTÃO WHATS */
+
 .btn-whats{
   margin: 10px 15px 15px;
   padding: 12px;
@@ -152,7 +150,6 @@ h2{
   background: #1ebe5d;
 }
 
-/* BOTÃO FLUTUANTE */
 .whatsapp-float{
   position: fixed;
   bottom: 20px;
@@ -183,7 +180,7 @@ h2{
   100% { box-shadow: 0 0 0 0 rgba(37,211,102, 0); }
 }
 
-/* FOOTER */
+
 .footer{
   background:#0b3e66;
   color:#fff;
@@ -239,7 +236,7 @@ h2{
   color:#E1306C;
 }
 
-/* FOOTER MOBILE */
+
 @media(max-width:768px){
   .footer-content{
     flex-direction:column;
