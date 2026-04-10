@@ -14,11 +14,24 @@
 
 <body>
 
+<a class="whatsapp-float" 
+   href="https://wa.me/55129?text=Olá!%20Aqui%20é%20da%20Pontoserv%20Assistência%20Técnica.%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento.%20Meu%20equipamento%20é:"
+   target="_blank">
+
+  <svg xmlns="http://www.w3.org/2000/svg" 
+       width="24" height="24" 
+       fill="white" 
+       viewBox="0 0 16 16">
+    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+  </svg>
+
+</a>
+
   <header>
     <div class="container header-content">
       <div class="logo">
-        <img src="public/img/ponto.svg">
-        <img src="public/img/serv (2).svg">
+        <img src="public/img/ponto.svg" data-aos="fade-right" data-aos-delay="1400">
+        <img src="public/img/serv (2).svg" data-aos="fade-down" data-aos-delay="1800">
       </div>
     </div>
   </header>
@@ -44,22 +57,36 @@
   <section>
     <div class="grid">
 
+  
   <div class="card" onclick="toggleCard(this)">
-    <img src="public/img/ar.jpg" alt="Técnico consertando ar-condicionado">
+    <img src="public/img/ar.jpg">
     <h3>Ar Condicionado</h3>
     <p class="desc">Instalação, limpeza e manutenção completa.</p>
+
+    <button class="btn-whats" onclick="event.stopPropagation(); enviarWhats('ar')">
+      Solicitar orçamento
+    </button>
   </div>
 
+  
   <div class="card" onclick="toggleCard(this)">
-    <img src="public/img/maquina.jpg" alt="Técnico consertando máquina de lavar">
+    <img src="public/img/maquina.jpg">
     <h3>Máquinas de Lavar</h3>
     <p class="desc">Conserto, troca de peças e manutenção.</p>
+
+    <button class="btn-whats" onclick="event.stopPropagation(); enviarWhats('lavadora')">
+      Solicitar orçamento
+    </button>
   </div>
 
   <div class="card" onclick="toggleCard(this)">
-    <img src="public/img/geladeira.jpg" alt="Técnico consertando geladeira">
+    <img src="public/img/geladeira.jpg">
     <h3>Geladeiras</h3>
     <p class="desc">Reparo completo e diagnóstico.</p>
+
+    <button class="btn-whats" onclick="event.stopPropagation(); enviarWhats('geladeira')">
+      Solicitar orçamento
+    </button>
   </div>
 
 </div>
@@ -93,12 +120,12 @@
       </a>
 
       <!-- Instagram -->
-      <a href="https://instagram.com/pontoserv_012" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0z"/>
-        </svg>
-        Instagram
-      </a>
+  <a href="https://instagram.com/pontoserv_012" target="_blank">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+    <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.55 4 20 5.45 20 7.75v8.5c0 2.3-1.45 3.75-3.75 3.75h-8.5C5.45 20 4 18.55 4 16.25v-8.5C4 5.45 5.45 4 7.75 4zm4.25 2.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11zm0 2a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zm5.25-.88a1.12 1.12 0 1 0 0 2.24 1.12 1.12 0 0 0 0-2.24z"/>
+  </svg>
+  Instagram
+</a>
 
     </div>
 
