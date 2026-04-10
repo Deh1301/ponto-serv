@@ -72,7 +72,7 @@ h2{
 /* GRID */
 .grid{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns: repeat(3,1fr);
   gap:20px;
 }
 
@@ -86,7 +86,20 @@ h2{
 /* MOBILE */
 @media(max-width:768px){
   .grid{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap:30px;
+  }
+
+  .card{
+    width:100%;
+  }
+
+  .card h3{
+    font-size:20px;
+  }
+
+  .desc{
+    font-size:15px;
   }
 }
 
@@ -119,18 +132,6 @@ h2{
 /* TEXTO */
 .card h3{
   padding:15px 15px 5px;
-  font-size:18px;
-}
-
-/* MOBILE TEXTO */
-@media(max-width:768px){
-  .card h3{
-    font-size:20px;
-  }
-
-  .desc{
-    font-size:15px;
-  }
 }
 
 /* DESCRIÇÃO (TOGGLE) */
@@ -146,7 +147,7 @@ h2{
   padding:0 15px 15px;
 }
 
-/* BOTÃO WHATS */
+/* BOTÃO WHATS NOS CARDS */
 .btn-whats{
   margin: 10px 15px 15px;
   padding: 12px;
@@ -249,6 +250,7 @@ h2{
   transform:translateX(5px);
 }
 
+/* cor instagram no hover */
 .footer-links a:hover svg{
   color: #E1306C;
 }
