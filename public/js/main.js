@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 function toggleCard(card){
-
   const cards = document.querySelectorAll('.card')
 
   cards.forEach(c => {
@@ -20,20 +19,20 @@ function toggleCard(card){
 
 function enviarWhats(tipo){
 
-  let numero = "5512999999999"; // troca aqui
+  let numero = "5512981739210";
 
   let mensagem = "";
 
   if (tipo === "ar") {
-    mensagem = "Olá! Aqui é da Pontoserv Assistência Técnica. Vi no site sobre higienização de ar condicionado. Quantos aparelhos são, quantos BTUs e qual bairro?";
+    mensagem = "Olá! Vim pelo site e quero orçamento de ar condicionado. Quantos aparelhos são, quantos BTUs e qual bairro?";
   }
 
   if (tipo === "geladeira") {
-    mensagem = "Olá! Aqui é da Pontoserv Assistência Técnica. Vi no site sobre manutenção de geladeira, vou descrever o defeito:";
+    mensagem = "Olá! Vim pelo site e preciso de manutenção de geladeira. Vou descrever o defeito:";
   }
 
-  if (tipo === "lavaeseca") {
-    mensagem = "Olá! Aqui é da Pontoserv Assistência Técnica. Vi no site sobre manutenção de lava e seca, e lavadouras de roupa vou descrever o defeito:";
+  if (tipo === "lavadora") {
+    mensagem = "Olá! Vim pelo site e preciso de manutenção de máquina de lavar. Vou descrever o defeito:";
   }
 
   let url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
