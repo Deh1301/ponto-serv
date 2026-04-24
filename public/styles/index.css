@@ -91,12 +91,19 @@ h2{
 
 @media(max-width:768px){
 
+  .logo{
+    display:flex !important;
+    flex-direction:column !important; /* força empilhar */
+    align-items:flex-start !important;
+  }
+
   .logo img{
-    height:50px; 
+    height:50px;
+    display:block;
   }
 
   .serv{
-    margin-top:-10px; 
+    margin-top:-20px; /* ajusta até colar certinho */
   }
   .grid{
     grid-template-columns: 1fr; 
@@ -254,12 +261,19 @@ h2{
 
 @media(max-width:768px){
 
+  .logo{
+    display:flex !important;
+    flex-direction:column !important; /* força empilhar */
+    align-items:flex-start !important;
+  }
+
   .logo img{
-    height:50px; /* menor no mobile */
+    height:50px;
+    display:block;
   }
 
   .serv{
-    margin-top:-10px; /* ajusta encaixe no mobile */
+    margin-top:-20px; /* ajusta até colar certinho */
   }
   .footer-content{
     flex-direction:column;
@@ -282,4 +296,17 @@ h2{
   border-top:1px solid rgba(255,255,255,0.1);
   font-size:13px;
   opacity:0.7;
+}
+
+.footer .logo img{
+  height:50px;
+  
+}
+
+.footer .serv{
+  margin-top:-10px;
+}
+
+.footer .logo{
+  align-items:center; /* centraliza */
 }
