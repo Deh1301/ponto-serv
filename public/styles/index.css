@@ -30,14 +30,25 @@ header{
 
 .logo{
   display:flex;
-  align-items:center;
-  gap:10px;
+  flex-direction:column; /* empilha */
+  align-items:flex-start;
+  line-height:0;
 }
 
 .logo img{
-  height:40px;
+  height:70px;
+  display:block;
 }
 
+.ponto{
+  position: absolute;
+}
+
+.serv{
+  
+  margin-top:45px;
+/* só isso já resolve */
+}
 .hero{
   background:#115A92;
   color:#fff;
