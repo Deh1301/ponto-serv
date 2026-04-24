@@ -253,6 +253,14 @@ h2{
 
 
 @media(max-width:768px){
+
+  .logo img{
+    height:50px; /* menor no mobile */
+  }
+
+  .serv{
+    margin-top:-10px; /* ajusta encaixe no mobile */
+  }
   .footer-content{
     flex-direction:column;
     text-align:center;
