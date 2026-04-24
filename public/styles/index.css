@@ -30,7 +30,7 @@ header{
 
 .logo{
   display:flex;
-  flex-direction:column; /* empilha */
+  flex-direction:column;
   align-items:flex-start;
   line-height:0;
 }
@@ -40,14 +40,10 @@ header{
   display:block;
 }
 
-.ponto{
-  position: absolute;
-}
-
 .serv{
   
-  margin-top:45px;
-/* só isso já resolve */
+  margin-top:-25px;
+
 }
 .hero{
   background:#115A92;
@@ -94,6 +90,14 @@ h2{
 
 
 @media(max-width:768px){
+
+  .logo img{
+    height:50px; 
+  }
+
+  .serv{
+    margin-top:-10px; 
+  }
   .grid{
     grid-template-columns: 1fr; 
   }
