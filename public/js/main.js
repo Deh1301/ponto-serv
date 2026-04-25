@@ -32,7 +32,7 @@ function enviarWhats(tipo){
   }
 
   if (tipo === "lavadora") {
-    mensagem = "Olá! Vim pelo site e preciso de manutenção de máquina de lavar. Vou descrever o defeito:";
+    mensagem = "Olá! Vim pelo site e preciso de manutenção na minha lava e seca. Vou descrever o defeito:";
   }
 
   let url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
