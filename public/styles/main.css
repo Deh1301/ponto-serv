@@ -3,35 +3,47 @@ body{
     justify-content:center;
     align-items:center;
     height:100vh;
+    background-color: #115A92;
 }
 
 
 .logo-container{
     display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:20px;
+    flex-direction:column; /* 🔥 empilha */
+    align-items:flex-start; /* 🔥 alinhado à esquerda igual header */
+    line-height:0;
 }
 
 
 .logo-container img{
     width: clamp(180px, 30vw, 400px);
     height: auto;
-}
-
-.logo-container img{
+    display:block;
     transition: transform 0.4s ease;
 }
+
+
+.serv1{
+    margin-top:-25px;
+}
+
 
 .logo-container img:hover{
     transform: scale(1.05);
 }
+
+
 @media(max-width:768px){
+
     .logo-container{
-        flex-direction:column;
+        align-items:flex-start; 
     }
 
     .logo-container img{
         width:150px;
+    }
+
+    .serv1{
+        margin-top:-20px;
     }
 }

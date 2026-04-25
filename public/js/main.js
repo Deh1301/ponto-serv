@@ -23,8 +23,8 @@ function enviarWhats(tipo){
 
   let mensagem = "";
 
-  if (tipo === "ar") {
-    mensagem = "Olá! Vim pelo site e quero orçamento de ar condicionado. Quantos aparelhos são, quantos BTUs e qual bairro?";
+  if (tipo === "lavar") {
+    mensagem = "Olá! Vim pelo site e quero orçamento para minha maquina de lavar. Vou descrever brevemente o defeito:";
   }
 
   if (tipo === "geladeira") {
