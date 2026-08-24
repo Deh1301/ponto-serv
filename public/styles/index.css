@@ -17,6 +17,11 @@ body{
   margin:auto;
 }
 
+.pontoserv{
+  width:20%;
+  border:#01589B;
+  transform: scale(1.005);
+}
 
 
 header{
@@ -53,7 +58,7 @@ header .logo{
 
 
 .hero{
-  background:#115A92;
+  background:#01589B;
   color:#fff;
   padding:80px 0;
   text-align:center;
