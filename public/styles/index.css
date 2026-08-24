@@ -112,6 +112,10 @@ h2{
   header .logo{
     align-items:flex-start;
   }
+  .card{
+    width:calc(100% - 10px);
+    margin:0 auto;
+}
 
   .logo img{
     height:55px;
@@ -127,6 +131,10 @@ h2{
   .hero{
     padding:60px 0;
   }
+  .card{
+    width:calc(100% - 10px);
+    margin:0 auto;
+}
 
   .hero h1{
     font-size:26px;
@@ -325,6 +333,10 @@ h2{
 
 
 @media(max-width:900px){
+  .card{
+    width:calc(100% - 10px);
+    margin:0 auto;
+}
 
   .footer-content{
     flex-direction:column;
@@ -344,6 +356,10 @@ h2{
 
 
 @media(max-width:600px){
+  .card{
+    width:calc(100% - 10px);
+    margin:0 auto;
+}
 
   .footer-info p{
     font-size:13px;
@@ -355,6 +371,10 @@ h2{
 }
 
 @media(max-width:400px){
+  .card{
+    width:calc(100% - 10px);
+    margin:0 auto;
+}
 
   .footer-links a{
     gap:8px;
