@@ -17,10 +17,13 @@ body{
   margin:auto;
 }
 
-.pontoserv{
-  width:20%;
-  border:#01589B;
-  transform: scale(1.005);
+.pontoserv {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+    clip-path: inset(2px);
 }
 
 
